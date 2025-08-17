@@ -1,0 +1,43 @@
+{
+  "document_type": "fixed_asset",
+  "asset_number": "FA-2023-003",
+  "asset_type": "Software",
+  "purchase_date": "2023-02-23",
+  "warranty_end": "2024-04-06",
+  "vendor": {
+    "name": "TECH SOLUTIONS INDIA",
+    "address": "45, TECH PARK, ELECTRONIC CITY, BANGALORE-560100",
+    "gstin": "29AABCT1234M1Z5",
+    "state": "Karnataka",
+    "state_code": "29",
+    "phone": "+91-80-23456789",
+    "email": "info@techsolutions.in"
+  },
+  "buyer": {
+    "name": "HP INDIA SALES PRIVATE LIMITED",
+    "address": "COMMERZ, 5TH FLOOR NORTH SIDE, INTERNATIONAL, BUSINESS PARK, OBEROI GARDEN CITY, OFF WESTERN EXPRESS HIGHWAY, GOREGAON, (EAST), MUMBAI 400 063, MAHARASHTRA",
+    "gstin": "27AAACC9862F1ZI",
+    "pan": "AAACC9882F",
+    "state": "Maharashtra",
+    "state_code": "27"
+  },
+  "asset_value": 1988495.82,
+  "currency": "INR",
+  "payment_terms": "Net 45",
+  "po_references": [
+    "PO-HP 325389",
+    "PO-HP 326691"
+  ],
+  "asset_details": {
+    "description": "Software from TECH SOLUTIONS INDIA",
+    "model": "MODEL-4655",
+    "serial_number": "SN-7565CA72",
+    "location": "COMMERZ, 5TH FLOOR NORTH SIDE, INTERNATIONAL, BUSINESS PARK, OBEROI GARDEN CITY, OFF WESTERN EXPRESS HIGHWAY, GOREGAON, (EAST), MUMBAI 400 063, MAHARASHTRA"
+  },
+  "depreciation": {
+    "method": "Straight Line",
+    "useful_life": 4,
+    "annual_depreciation": 248561.98
+  },
+  "status": "Retired"
+}

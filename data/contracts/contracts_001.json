@@ -1,0 +1,40 @@
+{
+  "document_type": "contract",
+  "contract_number": "CON-2025-001",
+  "contract_type": "Service Agreement",
+  "start_date": "2025-05-17",
+  "end_date": "2027-04-25",
+  "vendor": {
+    "name": "TECH SOLUTIONS INDIA",
+    "address": "45, TECH PARK, ELECTRONIC CITY, BANGALORE-560100",
+    "gstin": "29AABCT1234M1Z5",
+    "state": "Karnataka",
+    "state_code": "29",
+    "phone": "+91-80-23456789",
+    "email": "info@techsolutions.in"
+  },
+  "buyer": {
+    "name": "BANK OF AMERICA",
+    "address": "N.A FIRST & 2ND FLOOR, DLF CENTRE, SANSAD MARG, NEW DELHI-110001",
+    "gstin": "07AAACB1537G1Z3",
+    "pan": "AAACB1537G",
+    "state": "Delhi",
+    "state_code": "07"
+  },
+  "contract_value": 4077842.79,
+  "currency": "INR",
+  "payment_terms": "Net 60",
+  "po_references": [
+    "PO-BAN436490",
+    "PO-BAN759127",
+    "PO-BAN931307"
+  ],
+  "scope_of_work": "Comprehensive service agreement for BANK OF AMERICA",
+  "terms_and_conditions": [
+    "Payment within specified terms",
+    "Quality standards must be maintained",
+    "Confidentiality agreement applies",
+    "Force majeure clause included"
+  ],
+  "status": "Completed"
+}

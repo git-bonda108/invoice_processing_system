@@ -1,0 +1,56 @@
+{
+  "document_type": "invoice",
+  "invoice_number": "SAI25-06/002",
+  "invoice_date": "2025-06-21",
+  "due_date": "2025-08-05",
+  "irn": "7416d445cf724c04917b574ef0bc5f26-7475",
+  "ack_no": "721817804986423",
+  "ack_date": "21-Jun-25",
+  "vendor": {
+    "name": "SAI ENTERPRISES",
+    "address": "17-A, POCKET-B SIDDHARTHA EXTENSION NEW DELHI-110014",
+    "gstin": "07AGTPP2498Q1Z4",
+    "state": "Delhi",
+    "state_code": "07",
+    "phone": "+91-11-45678901",
+    "email": "sai.enterprises@gmail.com"
+  },
+  "buyer": {
+    "name": "HP INDIA SALES PRIVATE LIMITED",
+    "address": "COMMERZ, 5TH FLOOR NORTH SIDE, INTERNATIONAL, BUSINESS PARK, OBEROI GARDEN CITY, OFF WESTERN EXPRESS HIGHWAY, GOREGAON, (EAST), MUMBAI 400 063, MAHARASHTRA",
+    "gstin": "27AAACC9862F1ZI",
+    "pan": "AAACC9882F",
+    "state": "Maharashtra",
+    "state_code": "27"
+  },
+  "buyers_order_number": "HP 25063649",
+  "buyers_order_date": "2025-06-03",
+  "payment_terms": "30 Days",
+  "dispatch_details": {
+    "doc_no": "DELIVERED",
+    "date": "2025-06-21",
+    "through": "COURIER",
+    "destination": "MUMBAI 400 063"
+  },
+  "line_items": [
+    {
+      "description": "PRINTER HP LASERJET PRO M404N",
+      "hsn_sac": "84433200",
+      "quantity": 9,
+      "unit": "Nos",
+      "rate": 23666.92,
+      "amount": 213002.28
+    }
+  ],
+  "subtotal": 213002.28,
+  "tax_details": [
+    {
+      "type": "IGST",
+      "rate": 0.18,
+      "amount": 38340.41
+    }
+  ],
+  "total_amount": 251342.69,
+  "amount_in_words": "INR 2.5 Lakh",
+  "warranty": "WARRANTY BY THE PRINCIPAL COMPANY ONLY"
+}

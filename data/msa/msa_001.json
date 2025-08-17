@@ -1,0 +1,43 @@
+{
+  "document_type": "msa",
+  "msa_number": "MSA-2025-001",
+  "agreement_type": "Master Services Agreement",
+  "start_date": "2025-04-14",
+  "end_date": "2031-02-17",
+  "vendor": {
+    "name": "GLOBAL SUPPLIERS CORP",
+    "address": "123, BUSINESS DISTRICT, MUMBAI-400001",
+    "gstin": "27AABCS5678N1Z6",
+    "state": "Maharashtra",
+    "state_code": "27",
+    "phone": "+91-22-34567890",
+    "email": "contact@globalsuppliers.com"
+  },
+  "buyer": {
+    "name": "GOOGLE INDIA",
+    "address": "GOOGLE INDIA, GOOGLEPLEX, BANGALORE-560001, KARNATAKA",
+    "gstin": "29AABCG5678S1Z1",
+    "pan": "AABCG5678S",
+    "state": "Karnataka",
+    "state_code": "29"
+  },
+  "agreement_value": null,
+  "currency": "INR",
+  "payment_terms": "As per individual SOWs",
+  "po_references": [],
+  "scope_of_work": "Framework agreement for various services",
+  "terms_and_conditions": [
+    "Master agreement governing all future SOWs",
+    "Standard terms and conditions apply",
+    "Individual SOWs will reference this MSA",
+    "Pricing and terms subject to SOW-specific agreements"
+  ],
+  "status": "Active",
+  "framework_agreement": true,
+  "individual_sows": [
+    "SOW-2025-06",
+    "SOW-2025-04",
+    "SOW-2025-08",
+    "SOW-2025-03"
+  ]
+}

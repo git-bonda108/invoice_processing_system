@@ -1,0 +1,185 @@
+{
+  "document_type": "master_data",
+  "generated_at": "2025-08-17T23:58:09.002433",
+  "vendors": [
+    {
+      "name": "SAI ENTERPRISES",
+      "address": "17-A, POCKET-B SIDDHARTHA EXTENSION NEW DELHI-110014",
+      "gstin": "07AGTPP2498Q1Z4",
+      "state": "Delhi",
+      "state_code": "07",
+      "phone": "+91-11-45678901",
+      "email": "sai.enterprises@gmail.com"
+    },
+    {
+      "name": "TECH SOLUTIONS INDIA",
+      "address": "45, TECH PARK, ELECTRONIC CITY, BANGALORE-560100",
+      "gstin": "29AABCT1234M1Z5",
+      "state": "Karnataka",
+      "state_code": "29",
+      "phone": "+91-80-23456789",
+      "email": "info@techsolutions.in"
+    },
+    {
+      "name": "GLOBAL SUPPLIERS CORP",
+      "address": "123, BUSINESS DISTRICT, MUMBAI-400001",
+      "gstin": "27AABCS5678N1Z6",
+      "state": "Maharashtra",
+      "state_code": "27",
+      "phone": "+91-22-34567890",
+      "email": "contact@globalsuppliers.com"
+    },
+    {
+      "name": "INNOVATION TECHNOLOGIES",
+      "address": "78, INNOVATION HUB, HYDERABAD-500032",
+      "gstin": "36AABCI9012O1Z7",
+      "state": "Telangana",
+      "state_code": "36",
+      "phone": "+91-40-45678901",
+      "email": "hello@innovationtech.com"
+    },
+    {
+      "name": "QUALITY PRODUCTS LTD",
+      "address": "56, QUALITY STREET, CHENNAI-600001",
+      "gstin": "33AABCQ3456P1Z8",
+      "state": "Tamil Nadu",
+      "state_code": "33",
+      "phone": "+91-44-56789012",
+      "email": "sales@qualityproducts.com"
+    }
+  ],
+  "buyers": [
+    {
+      "name": "HP INDIA SALES PRIVATE LIMITED",
+      "address": "COMMERZ, 5TH FLOOR NORTH SIDE, INTERNATIONAL, BUSINESS PARK, OBEROI GARDEN CITY, OFF WESTERN EXPRESS HIGHWAY, GOREGAON, (EAST), MUMBAI 400 063, MAHARASHTRA",
+      "gstin": "27AAACC9862F1ZI",
+      "pan": "AAACC9882F",
+      "state": "Maharashtra",
+      "state_code": "27"
+    },
+    {
+      "name": "BANK OF AMERICA",
+      "address": "N.A FIRST & 2ND FLOOR, DLF CENTRE, SANSAD MARG, NEW DELHI-110001",
+      "gstin": "07AAACB1537G1Z3",
+      "pan": "AAACB1537G",
+      "state": "Delhi",
+      "state_code": "07"
+    },
+    {
+      "name": "MICROSOFT INDIA",
+      "address": "MICROSOFT INDIA, DLF CYBERCITY, DLF PHASE 2, GURGAON-122002, HARYANA",
+      "gstin": "06AABCM7890Q1Z9",
+      "pan": "AABCM7890Q",
+      "state": "Haryana",
+      "state_code": "06"
+    },
+    {
+      "name": "AMAZON INDIA",
+      "address": "AMAZON INDIA, AMAZON DEVELOPMENT CENTRE, BANGALORE-560001, KARNATAKA",
+      "gstin": "29AABCA1234R1Z0",
+      "pan": "AABCA1234R",
+      "state": "Karnataka",
+      "state_code": "29"
+    },
+    {
+      "name": "GOOGLE INDIA",
+      "address": "GOOGLE INDIA, GOOGLEPLEX, BANGALORE-560001, KARNATAKA",
+      "gstin": "29AABCG5678S1Z1",
+      "pan": "AABCG5678S",
+      "state": "Karnataka",
+      "state_code": "29"
+    }
+  ],
+  "product_categories": [
+    {
+      "name": "HP TONER CARTRIDGE BLACK W9190MC",
+      "hsn": "84439959",
+      "category": "Office Supplies",
+      "base_price_range": [
+        5000,
+        8000
+      ]
+    },
+    {
+      "name": "LAPTOP COMPUTER DELL LATITUDE 5520",
+      "hsn": "84713000",
+      "category": "Electronics",
+      "base_price_range": [
+        45000,
+        75000
+      ]
+    },
+    {
+      "name": "SOFTWARE LICENSE - MICROSOFT OFFICE 365",
+      "hsn": "85249900",
+      "category": "Software",
+      "base_price_range": [
+        8000,
+        15000
+      ]
+    },
+    {
+      "name": "NETWORK SWITCH CISCO CATALYST 2960",
+      "hsn": "85176200",
+      "category": "Networking",
+      "base_price_range": [
+        25000,
+        45000
+      ]
+    },
+    {
+      "name": "PRINTER HP LASERJET PRO M404N",
+      "hsn": "84433200",
+      "category": "Office Equipment",
+      "base_price_range": [
+        12000,
+        25000
+      ]
+    }
+  ],
+  "gst_rates": {
+    "0%": [
+      "Essential goods",
+      "Agricultural products"
+    ],
+    "5%": [
+      "Transportation",
+      "Basic services"
+    ],
+    "12%": [
+      "Processed foods",
+      "Some services"
+    ],
+    "18%": [
+      "Electronics",
+      "Most services",
+      "Manufactured goods"
+    ],
+    "28%": [
+      "Luxury items",
+      "Automobiles",
+      "Some services"
+    ]
+  },
+  "validation_rules": {
+    "invoice_number_format": "^[A-Z]{3}\\d{2}-\\d{2}/\\d{3}$",
+    "gstin_format": "^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$",
+    "pan_format": "^[A-Z]{5}[0-9]{4}[A-Z]{1}$",
+    "amount_range": {
+      "min": 0.01,
+      "max": 10000000
+    },
+    "date_range": {
+      "past_days": 365,
+      "future_days": 30
+    }
+  },
+  "anomaly_patterns": [
+    "Missing PO numbers in invoices",
+    "Vendor-buyer mismatches",
+    "Invalid GSTIN formats",
+    "Future invoice dates",
+    "Negative amounts",
+    "Missing tax calculations"
+  ]
+}

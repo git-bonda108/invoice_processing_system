@@ -1,0 +1,33 @@
+{
+  "document_type": "contract",
+  "contract_number": "CONT-2024-002",
+  "contract_date": "2024-09-10",
+  "effective_date": "2024-10-01",
+  "expiration_date": "2026-09-30",
+  "parties": {
+    "party_a": {
+      "name": "Global Enterprises",
+      "role": "Client",
+      "address": "2468 Enterprise Way"
+    },
+    "party_b": {
+      "name": "Global Services Ltd.",
+      "role": "Service Provider",
+      "address": "9876 Technology Drive"
+    }
+  },
+  "purchase_order_number": "PO-789012",
+  "contract_value": 275000.00,
+  "payment_terms": "Quarterly",
+  "scope_of_work": "IT Infrastructure Management and Support",
+  "deliverables": [
+    "24/7 infrastructure monitoring",
+    "Quarterly system updates",
+    "Annual security assessments"
+  ],
+  "terms_and_conditions": [
+    "Service level agreements apply",
+    "Data protection requirements",
+    "Disaster recovery provisions"
+  ]
+}

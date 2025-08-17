@@ -1,0 +1,29 @@
+{
+  "document_type": "lease_agreement",
+  "lease_number": "LEASE-2024-003",
+  "lease_date": "2024-09-10",
+  "lease_start_date": "2024-10-01",
+  "lease_end_date": "2029-09-30",
+  "lessor": {
+    "name": "Advanced Technologies Inc.",
+    "address": "8642 Tech Boulevard"
+  },
+  "lessee": {
+    "name": "Apex Solutions",
+    "address": "1111 Apex Plaza"
+  },
+  "leased_asset": {
+    "type": "Machinery",
+    "description": "Industrial 3D printing and manufacturing equipment",
+    "asset_id": "ASSET-24680"
+  },
+  "financial_terms": {
+    "monthly_payment": 8750.00,
+    "security_deposit": 17500.00,
+    "total_lease_value": 525000.00
+  },
+  "lease_type": "Capital Lease",
+  "renewal_options": "Automatic ownership transfer at end",
+  "maintenance_responsibility": "Shared",
+  "insurance_requirements": "Industrial equipment insurance required"
+}

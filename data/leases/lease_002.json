@@ -1,0 +1,29 @@
+{
+  "document_type": "lease_agreement",
+  "lease_number": "LEASE-2024-002",
+  "lease_date": "2024-08-20",
+  "lease_start_date": "2024-09-01",
+  "lease_end_date": "2026-08-31",
+  "lessor": {
+    "name": "Digital Solutions Group",
+    "address": "2468 Digital Way"
+  },
+  "lessee": {
+    "name": "Pinnacle Group",
+    "address": "9753 Pinnacle Drive"
+  },
+  "leased_asset": {
+    "type": "Vehicles",
+    "description": "Fleet of 5 commercial delivery vehicles",
+    "asset_id": "ASSET-67890"
+  },
+  "financial_terms": {
+    "monthly_payment": 3200.00,
+    "security_deposit": 6400.00,
+    "total_lease_value": 76800.00
+  },
+  "lease_type": "Finance Lease",
+  "renewal_options": "Purchase option at end of lease",
+  "maintenance_responsibility": "Lessee",
+  "insurance_requirements": "Full commercial vehicle insurance required"
+}

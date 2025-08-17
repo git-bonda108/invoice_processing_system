@@ -1,0 +1,38 @@
+{
+  "document_type": "contract",
+  "contract_number": "CON-2024-003",
+  "contract_type": "Service Agreement",
+  "start_date": "2024-12-19",
+  "end_date": "2026-06-04",
+  "vendor": {
+    "name": "QUALITY PRODUCTS LTD",
+    "address": "56, QUALITY STREET, CHENNAI-600001",
+    "gstin": "33AABCQ3456P1Z8",
+    "state": "Tamil Nadu",
+    "state_code": "33",
+    "phone": "+91-44-56789012",
+    "email": "sales@qualityproducts.com"
+  },
+  "buyer": {
+    "name": "MICROSOFT INDIA",
+    "address": "MICROSOFT INDIA, DLF CYBERCITY, DLF PHASE 2, GURGAON-122002, HARYANA",
+    "gstin": "06AABCM7890Q1Z9",
+    "pan": "AABCM7890Q",
+    "state": "Haryana",
+    "state_code": "06"
+  },
+  "contract_value": 3974762.34,
+  "currency": "INR",
+  "payment_terms": "Net 45",
+  "po_references": [
+    "PO-MIC549051"
+  ],
+  "scope_of_work": "Comprehensive service agreement for MICROSOFT INDIA",
+  "terms_and_conditions": [
+    "Payment within specified terms",
+    "Quality standards must be maintained",
+    "Confidentiality agreement applies",
+    "Force majeure clause included"
+  ],
+  "status": "Pending"
+}

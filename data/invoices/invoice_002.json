@@ -1,0 +1,36 @@
+{
+  "document_type": "invoice",
+  "invoice_number": "INV-2024-0002",
+  "invoice_date": "2024-11-01",
+  "due_date": "2024-12-01",
+  "vendor": {
+    "name": "Global Services Ltd.",
+    "address": "9876 Technology Drive, Suite 200",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90210",
+    "tax_id": "98-7654321"
+  },
+  "buyer": {
+    "name": "Global Enterprises",
+    "address": "2468 Enterprise Way",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98101"
+  },
+  "buyers_order_number": "PO-789012",
+  "line_items": [
+    {
+      "description": "Hardware Maintenance Contract",
+      "quantity": 1,
+      "unit_price": 8500.00,
+      "total": 8500.00
+    }
+  ],
+  "subtotal": 8500.00,
+  "tax_rate": 0.08,
+  "tax_amount": 680.00,
+  "total_amount": 9180.00,
+  "payment_terms": "Net 45",
+  "notes": "Thank you for your business!"
+}

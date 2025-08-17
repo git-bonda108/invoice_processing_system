@@ -1,0 +1,37 @@
+{
+  "document_type": "fixed_asset_agreement",
+  "agreement_number": "FA-2024-002",
+  "acquisition_date": "2024-07-20",
+  "buyer": {
+    "name": "Global Enterprises",
+    "address": "2468 Enterprise Way"
+  },
+  "seller": {
+    "name": "Innovation Partners LLC",
+    "address": "3456 Innovation Blvd"
+  },
+  "asset_details": {
+    "asset_id": "ASSET-98765",
+    "asset_type": "Manufacturing Equipment",
+    "description": "Automated assembly line with robotic components",
+    "model_number": "MODEL-ASM5000",
+    "serial_number": "SN987654321",
+    "manufacturer": "Industrial Solutions Co."
+  },
+  "financial_details": {
+    "purchase_price": 450000.00,
+    "depreciation_method": "Declining balance",
+    "useful_life_years": 10,
+    "salvage_value": 45000.00
+  },
+  "warranty_terms": {
+    "warranty_period": "5 years",
+    "warranty_provider": "Manufacturer",
+    "coverage": "Full system warranty"
+  },
+  "delivery_terms": {
+    "delivery_date": "2024-08-15",
+    "delivery_location": "Manufacturing facility",
+    "installation_included": true
+  }
+}

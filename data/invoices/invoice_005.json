@@ -1,0 +1,42 @@
+{
+  "document_type": "invoice",
+  "invoice_number": "INV-2024-0005",
+  "invoice_date": "2024-11-20",
+  "due_date": "2024-12-20",
+  "vendor": {
+    "name": "Digital Solutions Group",
+    "address": "2468 Digital Way",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "85001",
+    "tax_id": "24-6801357"
+  },
+  "buyer": {
+    "name": "Pinnacle Group",
+    "address": "9753 Pinnacle Drive",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "33101"
+  },
+  "buyers_order_number": "PO-567890",
+  "line_items": [
+    {
+      "description": "System Integration Services",
+      "quantity": 25,
+      "unit_price": 300.00,
+      "total": 7500.00
+    },
+    {
+      "description": "Training and Documentation",
+      "quantity": 10,
+      "unit_price": 200.00,
+      "total": 2000.00
+    }
+  ],
+  "subtotal": 9500.00,
+  "tax_rate": 0.08,
+  "tax_amount": 760.00,
+  "total_amount": 10260.00,
+  "payment_terms": "Net 30",
+  "notes": "Thank you for your business!"
+}

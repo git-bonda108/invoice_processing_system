@@ -1,0 +1,30 @@
+{
+  "document_type": "lease_agreement",
+  "lease_number": "LEASE-2024-001",
+  "lease_date": "2024-06-15",
+  "lease_start_date": "2024-07-01",
+  "lease_end_date": "2027-06-30",
+  "lessor": {
+    "name": "Enterprise Systems Co.",
+    "address": "6789 Enterprise Ave"
+  },
+  "lessee": {
+    "name": "Summit Holdings",
+    "address": "1357 Summit Street"
+  },
+  "leased_asset": {
+    "type": "Office Equipment",
+    "description": "High-performance server equipment and networking infrastructure",
+    "asset_id": "ASSET-12345"
+  },
+  "financial_terms": {
+    "monthly_payment": 5500.00,
+    "security_deposit": 11000.00,
+    "total_lease_value": 198000.00
+  },
+  "lease_type": "Operating Lease",
+  "renewal_options": "Two 1-year renewal options",
+  "maintenance_responsibility": "Lessor",
+  "insurance_requirements": "Lessee maintains comprehensive coverage",
+  "notes": "Lease agreements typically do not contain PO numbers as they are separate from purchase transactions."
+}

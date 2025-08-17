@@ -1,0 +1,40 @@
+{
+  "document_type": "contract",
+  "contract_number": "CON-2025-002",
+  "contract_type": "License Agreement",
+  "start_date": "2025-02-11",
+  "end_date": "2028-11-09",
+  "vendor": {
+    "name": "TECH SOLUTIONS INDIA",
+    "address": "45, TECH PARK, ELECTRONIC CITY, BANGALORE-560100",
+    "gstin": "29AABCT1234M1Z5",
+    "state": "Karnataka",
+    "state_code": "29",
+    "phone": "+91-80-23456789",
+    "email": "info@techsolutions.in"
+  },
+  "buyer": {
+    "name": "MICROSOFT INDIA",
+    "address": "MICROSOFT INDIA, DLF CYBERCITY, DLF PHASE 2, GURGAON-122002, HARYANA",
+    "gstin": "06AABCM7890Q1Z9",
+    "pan": "AABCM7890Q",
+    "state": "Haryana",
+    "state_code": "06"
+  },
+  "contract_value": 275129.0,
+  "currency": "INR",
+  "payment_terms": "Net 45",
+  "po_references": [
+    "PO-MIC667368",
+    "PO-MIC644053",
+    "PO-MIC280352"
+  ],
+  "scope_of_work": "Comprehensive license agreement for MICROSOFT INDIA",
+  "terms_and_conditions": [
+    "Payment within specified terms",
+    "Quality standards must be maintained",
+    "Confidentiality agreement applies",
+    "Force majeure clause included"
+  ],
+  "status": "Completed"
+}

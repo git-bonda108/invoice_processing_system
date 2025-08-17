@@ -1,0 +1,38 @@
+{
+  "document_type": "fixed_asset_agreement",
+  "agreement_number": "FA-2024-001",
+  "acquisition_date": "2024-05-15",
+  "buyer": {
+    "name": "Summit Holdings",
+    "address": "1357 Summit Street"
+  },
+  "seller": {
+    "name": "Enterprise Systems Co.",
+    "address": "6789 Enterprise Ave"
+  },
+  "asset_details": {
+    "asset_id": "ASSET-12345",
+    "asset_type": "Computer Equipment",
+    "description": "High-performance server cluster with 64 cores and 512GB RAM",
+    "model_number": "MODEL-SRV2024",
+    "serial_number": "SN123456789",
+    "manufacturer": "TechManufacturing Inc."
+  },
+  "financial_details": {
+    "purchase_price": 125000.00,
+    "depreciation_method": "Straight-line",
+    "useful_life_years": 5,
+    "salvage_value": 12500.00
+  },
+  "warranty_terms": {
+    "warranty_period": "3 years",
+    "warranty_provider": "Manufacturer",
+    "coverage": "Parts and labor"
+  },
+  "delivery_terms": {
+    "delivery_date": "2024-06-01",
+    "delivery_location": "Buyer's premises",
+    "installation_included": true
+  },
+  "notes": "This asset is related to LEASE-2024-001 - same asset ID indicates potential lease-to-own arrangement."
+}

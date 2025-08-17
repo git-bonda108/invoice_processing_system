@@ -1,0 +1,33 @@
+{
+  "document_type": "contract",
+  "contract_number": "CONT-2024-003",
+  "contract_date": "2024-10-05",
+  "effective_date": "2024-11-01",
+  "expiration_date": "2025-10-31",
+  "parties": {
+    "party_a": {
+      "name": "Metro Industries",
+      "role": "Client",
+      "address": "7890 Metro Plaza"
+    },
+    "party_b": {
+      "name": "Innovation Partners LLC",
+      "role": "Service Provider",
+      "address": "3456 Innovation Blvd"
+    }
+  },
+  "purchase_order_number": "PO-345678",
+  "contract_value": 180000.00,
+  "payment_terms": "Monthly",
+  "scope_of_work": "Cloud Migration and Management Services",
+  "deliverables": [
+    "Cloud infrastructure setup",
+    "Data migration services",
+    "Ongoing cloud management"
+  ],
+  "terms_and_conditions": [
+    "Cloud security standards apply",
+    "Data backup and recovery included",
+    "Performance monitoring included"
+  ]
+}

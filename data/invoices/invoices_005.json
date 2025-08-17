@@ -1,0 +1,56 @@
+{
+  "document_type": "invoice",
+  "invoice_number": "TEC25-05/005",
+  "invoice_date": "2025-05-12",
+  "due_date": "2025-07-11",
+  "irn": "07066783cb794c8492cd99b806c58530-3809",
+  "ack_no": "850256622932856",
+  "ack_date": "12-May-25",
+  "vendor": {
+    "name": "TECH SOLUTIONS INDIA",
+    "address": "45, TECH PARK, ELECTRONIC CITY, BANGALORE-560100",
+    "gstin": "29AABCT1234M1Z5",
+    "state": "Karnataka",
+    "state_code": "29",
+    "phone": "+91-80-23456789",
+    "email": "info@techsolutions.in"
+  },
+  "buyer": {
+    "name": "HP INDIA SALES PRIVATE LIMITED",
+    "address": "COMMERZ, 5TH FLOOR NORTH SIDE, INTERNATIONAL, BUSINESS PARK, OBEROI GARDEN CITY, OFF WESTERN EXPRESS HIGHWAY, GOREGAON, (EAST), MUMBAI 400 063, MAHARASHTRA",
+    "gstin": "27AAACC9862F1ZI",
+    "pan": "AAACC9882F",
+    "state": "Maharashtra",
+    "state_code": "27"
+  },
+  "buyers_order_number": "HP 25048865",
+  "buyers_order_date": "2025-04-20",
+  "payment_terms": "60 Days",
+  "dispatch_details": {
+    "doc_no": "DELIVERED",
+    "date": "2025-05-12",
+    "through": "COURIER",
+    "destination": "MUMBAI 400 063"
+  },
+  "line_items": [
+    {
+      "description": "NETWORK SWITCH CISCO CATALYST 2960",
+      "hsn_sac": "85176200",
+      "quantity": 6,
+      "unit": "Nos",
+      "rate": 25596.73,
+      "amount": 153580.38
+    }
+  ],
+  "subtotal": 153580.38,
+  "tax_details": [
+    {
+      "type": "IGST",
+      "rate": 0.18,
+      "amount": 27644.47
+    }
+  ],
+  "total_amount": 181224.85,
+  "amount_in_words": "INR 1.8 Lakh",
+  "warranty": "WARRANTY BY THE PRINCIPAL COMPANY ONLY"
+}

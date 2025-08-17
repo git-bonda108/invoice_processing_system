@@ -1,0 +1,38 @@
+{
+  "document_type": "fixed_asset_agreement",
+  "agreement_number": "FA-2024-003",
+  "acquisition_date": "2024-09-05",
+  "buyer": {
+    "name": "Apex Solutions",
+    "address": "1111 Apex Plaza"
+  },
+  "seller": {
+    "name": "Advanced Technologies Inc.",
+    "address": "8642 Tech Boulevard"
+  },
+  "asset_details": {
+    "asset_id": "ASSET-24680",
+    "asset_type": "Manufacturing Equipment",
+    "description": "Industrial 3D printing system with multi-material capability",
+    "model_number": "MODEL-3DP2024",
+    "serial_number": "SN246801357",
+    "manufacturer": "3D Innovations Corp"
+  },
+  "financial_details": {
+    "purchase_price": 275000.00,
+    "depreciation_method": "Units of production",
+    "useful_life_years": 8,
+    "salvage_value": 27500.00
+  },
+  "warranty_terms": {
+    "warranty_period": "2 years",
+    "warranty_provider": "Manufacturer",
+    "coverage": "Parts and technical support"
+  },
+  "delivery_terms": {
+    "delivery_date": "2024-09-20",
+    "delivery_location": "Production facility",
+    "installation_included": true
+  },
+  "notes": "This asset matches LEASE-2024-003 - same asset ID indicates lease-to-purchase arrangement."
+}

@@ -1,0 +1,44 @@
+{
+  "document_type": "lease",
+  "lease_number": "LEASE-2025-001",
+  "lease_type": "Software",
+  "start_date": "2025-07-01",
+  "end_date": "2027-10-25",
+  "lessor": {
+    "name": "GLOBAL SUPPLIERS CORP",
+    "address": "123, BUSINESS DISTRICT, MUMBAI-400001",
+    "gstin": "27AABCS5678N1Z6",
+    "state": "Maharashtra",
+    "state_code": "27",
+    "phone": "+91-22-34567890",
+    "email": "contact@globalsuppliers.com"
+  },
+  "lessee": {
+    "name": "MICROSOFT INDIA",
+    "address": "MICROSOFT INDIA, DLF CYBERCITY, DLF PHASE 2, GURGAON-122002, HARYANA",
+    "gstin": "06AABCM7890Q1Z9",
+    "pan": "AABCM7890Q",
+    "state": "Haryana",
+    "state_code": "06"
+  },
+  "monthly_rent": 93146.78,
+  "security_deposit": 279440.33,
+  "currency": "INR",
+  "payment_terms": "Monthly in advance",
+  "po_references": [
+    "PO-MIC986799",
+    "PO-MIC546848"
+  ],
+  "leased_item": {
+    "description": "Software at 123, BUSINESS DISTRICT, MUMBAI-400001",
+    "specifications": "As per attached specifications",
+    "condition": "Good working condition"
+  },
+  "terms_and_conditions": [
+    "Monthly rent due on 1st of each month",
+    "Security deposit refundable upon lease termination",
+    "Maintenance responsibility as per agreement",
+    "Early termination penalties apply"
+  ],
+  "status": "Terminated"
+}

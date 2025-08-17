@@ -1,0 +1,43 @@
+{
+  "document_type": "fixed_asset",
+  "asset_number": "FA-2024-001",
+  "asset_type": "Machinery",
+  "purchase_date": "2024-04-12",
+  "warranty_end": "2026-06-30",
+  "vendor": {
+    "name": "SAI ENTERPRISES",
+    "address": "17-A, POCKET-B SIDDHARTHA EXTENSION NEW DELHI-110014",
+    "gstin": "07AGTPP2498Q1Z4",
+    "state": "Delhi",
+    "state_code": "07",
+    "phone": "+91-11-45678901",
+    "email": "sai.enterprises@gmail.com"
+  },
+  "buyer": {
+    "name": "GOOGLE INDIA",
+    "address": "GOOGLE INDIA, GOOGLEPLEX, BANGALORE-560001, KARNATAKA",
+    "gstin": "29AABCG5678S1Z1",
+    "pan": "AABCG5678S",
+    "state": "Karnataka",
+    "state_code": "29"
+  },
+  "asset_value": 861215.02,
+  "currency": "INR",
+  "payment_terms": "Net 45",
+  "po_references": [
+    "PO-GOO142500",
+    "PO-GOO288721"
+  ],
+  "asset_details": {
+    "description": "Machinery from SAI ENTERPRISES",
+    "model": "MODEL-8690",
+    "serial_number": "SN-535B4733",
+    "location": "GOOGLE INDIA, GOOGLEPLEX, BANGALORE-560001, KARNATAKA"
+  },
+  "depreciation": {
+    "method": "Straight Line",
+    "useful_life": 7,
+    "annual_depreciation": 95690.56
+  },
+  "status": "Under Maintenance"
+}

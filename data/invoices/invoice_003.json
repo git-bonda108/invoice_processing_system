@@ -1,0 +1,42 @@
+{
+  "document_type": "invoice",
+  "invoice_number": "INV-2024-0003",
+  "invoice_date": "2024-11-10",
+  "due_date": "2024-12-10",
+  "vendor": {
+    "name": "Innovation Partners LLC",
+    "address": "3456 Innovation Blvd",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60601",
+    "tax_id": "45-6789012"
+  },
+  "buyer": {
+    "name": "Metro Industries",
+    "address": "7890 Metro Plaza",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80201"
+  },
+  "buyers_order_number": "PO-345678",
+  "line_items": [
+    {
+      "description": "Cloud Infrastructure Services",
+      "quantity": 12,
+      "unit_price": 750.00,
+      "total": 9000.00
+    },
+    {
+      "description": "Technical Support Services",
+      "quantity": 20,
+      "unit_price": 125.00,
+      "total": 2500.00
+    }
+  ],
+  "subtotal": 11500.00,
+  "tax_rate": 0.08,
+  "tax_amount": 920.00,
+  "total_amount": 12420.00,
+  "payment_terms": "Net 30",
+  "notes": "Thank you for your business!"
+}

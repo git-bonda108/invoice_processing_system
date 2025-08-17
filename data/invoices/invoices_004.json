@@ -1,0 +1,56 @@
+{
+  "document_type": "invoice",
+  "invoice_number": "INN25-04/004",
+  "invoice_date": "2025-04-07",
+  "due_date": "2025-05-22",
+  "irn": "c07e5791b1d34e7bbbc2eb19c9eb90ca-6646",
+  "ack_no": "411588105293074",
+  "ack_date": "07-Apr-25",
+  "vendor": {
+    "name": "INNOVATION TECHNOLOGIES",
+    "address": "78, INNOVATION HUB, HYDERABAD-500032",
+    "gstin": "36AABCI9012O1Z7",
+    "state": "Telangana",
+    "state_code": "36",
+    "phone": "+91-40-45678901",
+    "email": "hello@innovationtech.com"
+  },
+  "buyer": {
+    "name": "HP INDIA SALES PRIVATE LIMITED",
+    "address": "COMMERZ, 5TH FLOOR NORTH SIDE, INTERNATIONAL, BUSINESS PARK, OBEROI GARDEN CITY, OFF WESTERN EXPRESS HIGHWAY, GOREGAON, (EAST), MUMBAI 400 063, MAHARASHTRA",
+    "gstin": "27AAACC9862F1ZI",
+    "pan": "AAACC9882F",
+    "state": "Maharashtra",
+    "state_code": "27"
+  },
+  "buyers_order_number": "HP 25038859",
+  "buyers_order_date": "2025-03-11",
+  "payment_terms": "15 Days",
+  "dispatch_details": {
+    "doc_no": "DELIVERED",
+    "date": "2025-04-07",
+    "through": "BY HAND",
+    "destination": "MUMBAI 400 063"
+  },
+  "line_items": [
+    {
+      "description": "HP TONER CARTRIDGE BLACK W9190MC",
+      "hsn_sac": "84439959",
+      "quantity": 7,
+      "unit": "Nos",
+      "rate": 5750.12,
+      "amount": 40250.84
+    }
+  ],
+  "subtotal": 40250.84,
+  "tax_details": [
+    {
+      "type": "IGST",
+      "rate": 0.18,
+      "amount": 7245.15
+    }
+  ],
+  "total_amount": 47495.99,
+  "amount_in_words": "INR 47.5 Thousand",
+  "warranty": "WARRANTY BY THE PRINCIPAL COMPANY ONLY"
+}

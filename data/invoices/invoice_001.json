@@ -1,0 +1,42 @@
+{
+  "document_type": "invoice",
+  "invoice_number": "INV-2024-0001",
+  "invoice_date": "2024-10-15",
+  "due_date": "2024-11-14",
+  "vendor": {
+    "name": "TechCorp Solutions Inc.",
+    "address": "1234 Business Ave, Suite 567",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001",
+    "tax_id": "12-3456789"
+  },
+  "buyer": {
+    "name": "Acme Corporation",
+    "address": "5678 Corporate Blvd",
+    "city": "Boston",
+    "state": "MA",
+    "zip": "02101"
+  },
+  "buyers_order_number": "PO-123456",
+  "line_items": [
+    {
+      "description": "Software License - Annual Subscription",
+      "quantity": 5,
+      "unit_price": 1200.00,
+      "total": 6000.00
+    },
+    {
+      "description": "Professional Services - Consulting",
+      "quantity": 40,
+      "unit_price": 150.00,
+      "total": 6000.00
+    }
+  ],
+  "subtotal": 12000.00,
+  "tax_rate": 0.08,
+  "tax_amount": 960.00,
+  "total_amount": 12960.00,
+  "payment_terms": "Net 30",
+  "notes": "Thank you for your business!"
+}

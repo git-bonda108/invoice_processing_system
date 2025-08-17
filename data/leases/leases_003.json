@@ -1,0 +1,44 @@
+{
+  "document_type": "lease",
+  "lease_number": "LEASE-2025-003",
+  "lease_type": "Vehicle",
+  "start_date": "2025-04-19",
+  "end_date": "2029-09-03",
+  "lessor": {
+    "name": "SAI ENTERPRISES",
+    "address": "17-A, POCKET-B SIDDHARTHA EXTENSION NEW DELHI-110014",
+    "gstin": "07AGTPP2498Q1Z4",
+    "state": "Delhi",
+    "state_code": "07",
+    "phone": "+91-11-45678901",
+    "email": "sai.enterprises@gmail.com"
+  },
+  "lessee": {
+    "name": "HP INDIA SALES PRIVATE LIMITED",
+    "address": "COMMERZ, 5TH FLOOR NORTH SIDE, INTERNATIONAL, BUSINESS PARK, OBEROI GARDEN CITY, OFF WESTERN EXPRESS HIGHWAY, GOREGAON, (EAST), MUMBAI 400 063, MAHARASHTRA",
+    "gstin": "27AAACC9862F1ZI",
+    "pan": "AAACC9882F",
+    "state": "Maharashtra",
+    "state_code": "27"
+  },
+  "monthly_rent": 302964.98,
+  "security_deposit": 1817789.9,
+  "currency": "INR",
+  "payment_terms": "Monthly in advance",
+  "po_references": [
+    "PO-HP 946857",
+    "PO-HP 306092"
+  ],
+  "leased_item": {
+    "description": "Vehicle at 17-A, POCKET-B SIDDHARTHA EXTENSION NEW DELHI-110014",
+    "specifications": "As per attached specifications",
+    "condition": "Good working condition"
+  },
+  "terms_and_conditions": [
+    "Monthly rent due on 1st of each month",
+    "Security deposit refundable upon lease termination",
+    "Maintenance responsibility as per agreement",
+    "Early termination penalties apply"
+  ],
+  "status": "Terminated"
+}

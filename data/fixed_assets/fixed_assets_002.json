@@ -1,0 +1,43 @@
+{
+  "document_type": "fixed_asset",
+  "asset_number": "FA-2024-002",
+  "asset_type": "Computer Equipment",
+  "purchase_date": "2024-06-25",
+  "warranty_end": "2026-05-05",
+  "vendor": {
+    "name": "GLOBAL SUPPLIERS CORP",
+    "address": "123, BUSINESS DISTRICT, MUMBAI-400001",
+    "gstin": "27AABCS5678N1Z6",
+    "state": "Maharashtra",
+    "state_code": "27",
+    "phone": "+91-22-34567890",
+    "email": "contact@globalsuppliers.com"
+  },
+  "buyer": {
+    "name": "AMAZON INDIA",
+    "address": "AMAZON INDIA, AMAZON DEVELOPMENT CENTRE, BANGALORE-560001, KARNATAKA",
+    "gstin": "29AABCA1234R1Z0",
+    "pan": "AABCA1234R",
+    "state": "Karnataka",
+    "state_code": "29"
+  },
+  "asset_value": 368280.47,
+  "currency": "INR",
+  "payment_terms": "Net 30",
+  "po_references": [
+    "PO-AMA235007",
+    "PO-AMA787006"
+  ],
+  "asset_details": {
+    "description": "Computer Equipment from GLOBAL SUPPLIERS CORP",
+    "model": "MODEL-1562",
+    "serial_number": "SN-F1A49CE4",
+    "location": "AMAZON INDIA, AMAZON DEVELOPMENT CENTRE, BANGALORE-560001, KARNATAKA"
+  },
+  "depreciation": {
+    "method": "Straight Line",
+    "useful_life": 8,
+    "annual_depreciation": 73656.09
+  },
+  "status": "Retired"
+}

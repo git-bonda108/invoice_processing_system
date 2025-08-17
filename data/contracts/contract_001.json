@@ -1,0 +1,33 @@
+{
+  "document_type": "contract",
+  "contract_number": "CONT-2024-001",
+  "contract_date": "2024-08-15",
+  "effective_date": "2024-09-01",
+  "expiration_date": "2025-08-31",
+  "parties": {
+    "party_a": {
+      "name": "Acme Corporation",
+      "role": "Client",
+      "address": "5678 Corporate Blvd"
+    },
+    "party_b": {
+      "name": "TechCorp Solutions Inc.",
+      "role": "Service Provider",
+      "address": "1234 Business Ave"
+    }
+  },
+  "purchase_order_number": "PO-123456",
+  "contract_value": 150000.00,
+  "payment_terms": "Monthly",
+  "scope_of_work": "Software Development and Maintenance Services",
+  "deliverables": [
+    "Custom software application",
+    "Monthly maintenance and support",
+    "Documentation and training materials"
+  ],
+  "terms_and_conditions": [
+    "Standard payment terms apply",
+    "Confidentiality agreement in effect",
+    "Intellectual property rights as specified"
+  ]
+}

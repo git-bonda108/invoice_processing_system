@@ -1,0 +1,44 @@
+{
+  "document_type": "lease",
+  "lease_number": "LEASE-2025-002",
+  "lease_type": "Office Space",
+  "start_date": "2025-05-18",
+  "end_date": "2029-08-24",
+  "lessor": {
+    "name": "GLOBAL SUPPLIERS CORP",
+    "address": "123, BUSINESS DISTRICT, MUMBAI-400001",
+    "gstin": "27AABCS5678N1Z6",
+    "state": "Maharashtra",
+    "state_code": "27",
+    "phone": "+91-22-34567890",
+    "email": "contact@globalsuppliers.com"
+  },
+  "lessee": {
+    "name": "AMAZON INDIA",
+    "address": "AMAZON INDIA, AMAZON DEVELOPMENT CENTRE, BANGALORE-560001, KARNATAKA",
+    "gstin": "29AABCA1234R1Z0",
+    "pan": "AABCA1234R",
+    "state": "Karnataka",
+    "state_code": "29"
+  },
+  "monthly_rent": 207473.06,
+  "security_deposit": 1244838.35,
+  "currency": "INR",
+  "payment_terms": "Monthly in advance",
+  "po_references": [
+    "PO-AMA260542",
+    "PO-AMA450348"
+  ],
+  "leased_item": {
+    "description": "Office Space at 123, BUSINESS DISTRICT, MUMBAI-400001",
+    "specifications": "As per attached specifications",
+    "condition": "Good working condition"
+  },
+  "terms_and_conditions": [
+    "Monthly rent due on 1st of each month",
+    "Security deposit refundable upon lease termination",
+    "Maintenance responsibility as per agreement",
+    "Early termination penalties apply"
+  ],
+  "status": "Pending"
+}
