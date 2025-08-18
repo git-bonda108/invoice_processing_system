@@ -318,17 +318,29 @@ class MessageQueue:
                     # Clean up expired messages from all queues
                     for queue_id, queue in self.queues.items():
                         original_size = len(queue)
-                        queue[:] = [msg for msg in queue if not msg.is_expired()]
-                        expired_count += original_size - len(queue)
+                        # Use proper operations for each queue type
+                        if isinstance(queue, deque):
+                            expired_messages = [msg for msg in queue if msg.is_expired()]
+                            for msg in expired_messages:
+                                queue.remove(msg)
+                            expired_count += len(expired_messages)
+                        else:
+                            # For regular lists
+                            queue[:] = [msg for msg in queue if not msg.is_expired()]
+                            expired_count += original_size - len(queue)
                     
                     # Clean up expired messages from global queue
                     original_size = len(self.global_queue)
-                    self.global_queue[:] = [msg for msg in self.global_queue if not msg.is_expired()]
-                    expired_count += original_size - len(self.global_queue)
+                    # Use proper deque operations instead of slice assignment
+                    expired_messages = [msg for msg in self.global_queue if msg.is_expired()]
+                    for msg in expired_messages:
+                        self.global_queue.remove(msg)
+                    expired_count += len(expired_messages)
                     
                     # Clean up expired messages from history
                     original_size = len(self.message_history)
-                    self.message_history[:] = [msg for msg in self.message_history if not msg.is_expired()]
+                    # Use proper list operations for history
+                    self.message_history = [msg for msg in self.message_history if not msg.is_expired()]
                     expired_count += original_size - len(self.message_history)
                     
                     if expired_count > 0:
