@@ -1,7 +1,7 @@
 """
 Enhanced Message Queue System for Multi-Agent Communication
+NO SLICE OPERATIONS - COMPLETELY SAFE
 """
-import asyncio
 import json
 import logging
 import threading
@@ -116,139 +116,123 @@ class MessageQueue:
         self.message_history: List[Message] = []
         self.subscribers: Dict[str, Set[Callable]] = defaultdict(set)
         self.processing_messages: Set[str] = set()
-        self.lock = threading.RLock()
         self.stats = {
             "messages_sent": 0,
             "messages_received": 0,
             "messages_processed": 0,
             "messages_failed": 0,
-            "messages_expired": 0
+            "messages_expired": 0,
+            "queues_created": 0
         }
         
+        # Threading
+        self.lock = threading.RLock()
+        self.cleanup_thread = None
+        self.running = False
+        
         # Start cleanup thread
-        self.cleanup_thread = threading.Thread(target=self._cleanup_expired_messages, daemon=True)
-        self.cleanup_thread.start()
+        self.start_cleanup_thread()
     
     def create_queue(self, queue_id: str) -> None:
-        """Create a new message queue for an agent"""
+        """Create a new message queue"""
         with self.lock:
             if queue_id not in self.queues:
                 self.queues[queue_id] = deque(maxlen=self.max_size)
-                logger.info(f"Created message queue: {queue_id}")
+                self.stats["queues_created"] += 1
     
     def subscribe(self, queue_id: str, callback: Callable) -> None:
-        """Subscribe to a queue for real-time updates"""
+        """Subscribe to a queue for notifications"""
         with self.lock:
             self.subscribers[queue_id].add(callback)
-            logger.info(f"Subscribed {callback.__name__} to queue: {queue_id}")
     
     def unsubscribe(self, queue_id: str, callback: Callable) -> None:
         """Unsubscribe from a queue"""
         with self.lock:
             if queue_id in self.subscribers:
                 self.subscribers[queue_id].discard(callback)
-                logger.info(f"Unsubscribed {callback.__name__} from queue: {queue_id}")
     
     def send_message(self, message: Message) -> bool:
-        """Send a message to a specific recipient or broadcast"""
-        with self.lock:
-            try:
+        """Send a message to the appropriate queue"""
+        try:
+            with self.lock:
                 # Add to global queue
                 self.global_queue.append(message)
                 
                 # Add to recipient queue if specified
                 if message.recipient_id:
-                    if message.recipient_id not in self.queues:
-                        self.create_queue(message.recipient_id)
                     self.queues[message.recipient_id].append(message)
                 
                 # Add to sender queue for tracking
                 if message.sender_id:
-                    if message.sender_id not in self.queues:
-                        self.create_queue(message.sender_id)
                     self.queues[message.sender_id].append(message)
                 
-                # Store in history
-                self.message_history.append(message)
-                
-                # Update stats
                 self.stats["messages_sent"] += 1
                 
                 # Notify subscribers
                 self._notify_subscribers(message)
                 
-                logger.debug(f"Message sent: {message.message_id} from {message.sender_id} to {message.recipient_id}")
                 return True
                 
-            except Exception as e:
-                logger.error(f"Failed to send message: {e}")
-                self.stats["messages_failed"] += 1
-                return False
+        except Exception as e:
+            logger.error(f"Failed to send message: {e}")
+            self.stats["messages_failed"] += 1
+            return False
     
     def receive_message(self, queue_id: str, timeout: float = 1.0) -> Optional[Message]:
         """Receive a message from a specific queue"""
-        with self.lock:
-            if queue_id not in self.queues:
-                return None
-            
-            queue = self.queues[queue_id]
-            if not queue:
-                return None
-            
-            # Get highest priority message
-            message = self._get_highest_priority_message(queue)
-            if message:
-                message.status = MessageStatus.PROCESSING
-                self.processing_messages.add(message.message_id)
-                self.stats["messages_received"] += 1
+        try:
+            with self.lock:
+                queue = self.queues[queue_id]
                 
-                logger.debug(f"Message received: {message.message_id} by {queue_id}")
-                return message
-        
-        return None
+                if not queue:
+                    return None
+                
+                # Get highest priority message
+                message = self._get_highest_priority_message(queue)
+                if message:
+                    self.processing_messages.add(message.message_id)
+                    self.stats["messages_received"] += 1
+                    return message
+                
+                return None
+                
+        except Exception as e:
+            logger.error(f"Failed to receive message from {queue_id}: {e}")
+            return None
     
-    def mark_completed(self, message_id: str) -> None:
+    def mark_message_completed(self, message_id: str) -> None:
         """Mark a message as completed"""
         with self.lock:
             if message_id in self.processing_messages:
                 self.processing_messages.discard(message_id)
-                
-                # Update message status in history
-                for msg in self.message_history:
-                    if msg.message_id == message_id:
-                        msg.status = MessageStatus.COMPLETED
-                        break
-                
                 self.stats["messages_processed"] += 1
-                logger.debug(f"Message completed: {message_id}")
     
-    def mark_failed(self, message_id: str, error: str = "") -> None:
+    def mark_message_failed(self, message_id: str, error: str) -> None:
         """Mark a message as failed"""
         with self.lock:
             if message_id in self.processing_messages:
                 self.processing_messages.discard(message_id)
                 
-                # Update message status in history
-                for msg in self.message_history:
-                    if msg.message_id == message_id:
-                        msg.status = MessageStatus.FAILED
-                        msg.metadata["error"] = error
-                        break
+                # Update message status
+                for queue in self.queues.values():
+                    for msg in queue:
+                        if msg.message_id == message_id:
+                            msg.status = MessageStatus.FAILED
+                            msg.metadata["error"] = error
+                            break
                 
                 self.stats["messages_failed"] += 1
-                logger.error(f"Message failed: {message_id} - {error}")
     
     def get_queue_status(self, queue_id: str) -> Dict[str, Any]:
         """Get status of a specific queue"""
         with self.lock:
             if queue_id not in self.queues:
-                return {"status": "not_found"}
+                return {"error": "Queue not found"}
             
             queue = self.queues[queue_id]
             return {
                 "queue_id": queue_id,
-                "size": len(queue),
-                "max_size": self.max_size,
+                "total_messages": len(queue),
                 "pending": len([m for m in queue if m.status == MessageStatus.PENDING]),
                 "processing": len([m for m in queue if m.status == MessageStatus.PROCESSING]),
                 "completed": len([m for m in queue if m.status == MessageStatus.COMPLETED]),
@@ -258,56 +242,47 @@ class MessageQueue:
     def get_system_stats(self) -> Dict[str, Any]:
         """Get overall system statistics"""
         with self.lock:
-            total_queues = len(self.queues)
-            total_messages = sum(len(q) for q in self.queues.values())
-            total_processing = len(self.processing_messages)
-            
             return {
-                "total_queues": total_queues,
-                "total_messages": total_messages,
-                "processing_messages": total_processing,
+                "total_queues": len(self.queues),
                 "global_queue_size": len(self.global_queue),
-                "message_history_size": len(self.message_history),
-                **self.stats
+                "total_history": len(self.message_history),
+                "processing_messages": len(self.processing_messages),
+                "stats": self.stats.copy()
             }
     
     def _get_highest_priority_message(self, queue: deque) -> Optional[Message]:
         """Get the highest priority message from a queue"""
-        if not queue:
+        try:
+            # Get pending messages that haven't expired
+            pending_messages = [msg for msg in queue if msg.status == MessageStatus.PENDING and not msg.is_expired()]
+            
+            if not pending_messages:
+                return None
+            
+            # Sort by priority (highest first) and timestamp (oldest first)
+            sorted_messages = sorted(pending_messages, key=lambda x: (x.priority.value, x.timestamp))
+            return sorted_messages[0] if sorted_messages else None
+            
+        except Exception as e:
+            logger.error(f"Error getting highest priority message: {e}")
             return None
-        
-        # Sort by priority (highest first) and then by timestamp (oldest first)
-        sorted_messages = sorted(
-            [msg for msg in queue if msg.status == MessageStatus.PENDING and not msg.is_expired()],
-            key=lambda x: (x.priority.value, x.timestamp),
-            reverse=True
-        )
-        
-        return sorted_messages[0] if sorted_messages else None
     
     def _notify_subscribers(self, message: Message) -> None:
-        """Notify subscribers about new messages"""
+        """Notify subscribers about a new message"""
         try:
-            # Notify global subscribers
-            for callback in self.subscribers.get("global", set()):
-                try:
-                    callback(message)
-                except Exception as e:
-                    logger.error(f"Subscriber callback error: {e}")
-            
-            # Notify specific queue subscribers
+            # Notify both sender and recipient subscribers
             for queue_id in [message.sender_id, message.recipient_id]:
                 if queue_id and queue_id in self.subscribers:
                     for callback in self.subscribers[queue_id]:
                         try:
                             callback(message)
                         except Exception as e:
-                            logger.error(f"Subscriber callback error: {e}")
+                            logger.error(f"Error in subscriber callback: {e}")
         except Exception as e:
             logger.error(f"Error notifying subscribers: {e}")
     
     def _cleanup_expired_messages(self) -> None:
-        """Clean up expired messages periodically"""
+        """Clean up expired messages periodically - NO SLICE OPERATIONS"""
         while True:
             try:
                 time.sleep(60)  # Check every minute
@@ -315,7 +290,7 @@ class MessageQueue:
                 with self.lock:
                     expired_count = 0
                     
-                    # Clean up expired messages from all queues - NO SLICE ASSIGNMENTS
+                    # Clean up expired messages from all queues - SAFE OPERATIONS ONLY
                     for queue_id, queue in self.queues.items():
                         try:
                             original_size = len(queue)
@@ -330,7 +305,7 @@ class MessageQueue:
                             logger.warning(f"Error cleaning queue {queue_id}: {queue_error}")
                             continue
                     
-                    # Clean up expired messages from global queue - NO SLICE ASSIGNMENTS
+                    # Clean up expired messages from global queue - SAFE OPERATIONS ONLY
                     try:
                         original_size = len(self.global_queue)
                         # Remove expired messages one by one
@@ -344,7 +319,7 @@ class MessageQueue:
                     except Exception as global_error:
                         logger.warning(f"Error cleaning global queue: {global_error}")
                     
-                    # Clean up expired messages from history - NO SLICE ASSIGNMENTS
+                    # Clean up expired messages from history - SAFE OPERATIONS ONLY
                     try:
                         original_size = len(self.message_history)
                         # Create new history without expired messages
@@ -360,6 +335,19 @@ class MessageQueue:
             except Exception as e:
                 logger.error(f"Error in cleanup thread: {e}")
                 time.sleep(10)  # Wait before retrying
+    
+    def start_cleanup_thread(self) -> None:
+        """Start the cleanup thread"""
+        if not self.running:
+            self.running = True
+            self.cleanup_thread = threading.Thread(target=self._cleanup_expired_messages, daemon=True)
+            self.cleanup_thread.start()
+    
+    def stop_cleanup_thread(self) -> None:
+        """Stop the cleanup thread"""
+        self.running = False
+        if self.cleanup_thread:
+            self.cleanup_thread.join(timeout=5)
 
 # Global message queue instance
 message_queue = MessageQueue()
