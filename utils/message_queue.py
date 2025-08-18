@@ -325,8 +325,10 @@ class MessageQueue:
                                 queue.remove(msg)
                             expired_count += len(expired_messages)
                         else:
-                            # For regular lists
-                            queue[:] = [msg for msg in queue if not msg.is_expired()]
+                            # For regular lists - use safe assignment
+                            new_queue = [msg for msg in queue if not msg.is_expired()]
+                            queue.clear()
+                            queue.extend(new_queue)
                             expired_count += original_size - len(queue)
                     
                     # Clean up expired messages from global queue
