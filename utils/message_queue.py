@@ -6,6 +6,7 @@ import json
 import logging
 import threading
 import time
+import os
 from collections import defaultdict, deque
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
@@ -13,7 +14,10 @@ from enum import Enum
 from typing import Dict, List, Any, Optional, Callable, Set
 from uuid import uuid4
 
+__MQ_VERSION__ = "mq-2025-08-18-11-20Z"
+
 logger = logging.getLogger(__name__)
+logger.info(f"utils.message_queue version={__MQ_VERSION__} file={__file__}")
 
 class MessageType(Enum):
     """Message types for agent communication"""
@@ -130,7 +134,7 @@ class MessageQueue:
         self.cleanup_thread = None
         self.running = False
         
-        # Start cleanup thread
+        # Start cleanup thread (can be disabled by env var)
         self.start_cleanup_thread()
     
     def create_queue(self, queue_id: str) -> None:
@@ -192,7 +196,7 @@ class MessageQueue:
                 if message:
                     self.processing_messages.add(message.message_id)
                     self.stats["messages_received"] += 1
-                    return message
+                return message
                 
                 return None
                 
@@ -302,7 +306,7 @@ class MessageQueue:
                                 queue.append(msg)
                             expired_count += original_size - len(queue)
                         except Exception as queue_error:
-                            logger.warning(f"Error cleaning queue {queue_id}: {queue_error}")
+                            logger.exception(f"[{__MQ_VERSION__}] Error cleaning queue {queue_id} (type={type(queue).__name__}): {queue_error}")
                             continue
                     
                     # Clean up expired messages from global queue - SAFE OPERATIONS ONLY
@@ -317,7 +321,7 @@ class MessageQueue:
                                 pass  # Message already removed
                         expired_count += len(expired_messages)
                     except Exception as global_error:
-                        logger.warning(f"Error cleaning global queue: {global_error}")
+                        logger.exception(f"[{__MQ_VERSION__}] Error cleaning global queue (type={type(self.global_queue).__name__}): {global_error}")
                     
                     # Clean up expired messages from history - SAFE OPERATIONS ONLY
                     try:
@@ -326,18 +330,23 @@ class MessageQueue:
                         self.message_history = [msg for msg in self.message_history if not msg.is_expired()]
                         expired_count += original_size - len(self.message_history)
                     except Exception as history_error:
-                        logger.warning(f"Error cleaning history: {history_error}")
+                        logger.exception(f"[{__MQ_VERSION__}] Error cleaning history: {history_error}")
                     
                     if expired_count > 0:
                         self.stats["messages_expired"] += expired_count
-                        logger.info(f"Cleaned up {expired_count} expired messages")
+                        logger.info(f"[{__MQ_VERSION__}] Cleaned up {expired_count} expired messages")
                         
             except Exception as e:
-                logger.error(f"Error in cleanup thread: {e}")
+                logger.exception(f"[{__MQ_VERSION__}] Error in cleanup thread: {e}")
                 time.sleep(10)  # Wait before retrying
     
     def start_cleanup_thread(self) -> None:
         """Start the cleanup thread"""
+        # Allow disabling via env var (default: disabled to avoid cloud crash)
+        disabled = os.getenv("MQ_CLEANUP_DISABLED", "1") == "1"
+        if disabled:
+            logger.warning(f"[{__MQ_VERSION__}] Cleanup thread is DISABLED via MQ_CLEANUP_DISABLED=1")
+            return
         if not self.running:
             self.running = True
             self.cleanup_thread = threading.Thread(target=self._cleanup_expired_messages, daemon=True)
