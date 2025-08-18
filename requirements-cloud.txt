@@ -1,0 +1,28 @@
+# Cloud-optimized requirements for Streamlit Cloud deployment
+# Core Streamlit and data processing
+streamlit>=1.28.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.17.0
+plotly-express>=0.4.0
+
+# Date handling
+python-dateutil>=2.8.0
+
+# Environment and configuration
+python-dotenv>=0.21.0
+
+# AI/ML (optional - remove if not needed for cloud demo)
+# openai>=1.3.0
+# anthropic>=0.7.0
+
+# Remove heavy packages that aren't needed for cloud demo
+# reportlab>=4.0.0
+# fpdf2>=2.7.0
+# Pillow>=10.0.0
+# openpyxl>=3.1.0
+# python-docx>=0.8.0
+# pydantic>=2.4.0
+# typing-extensions>=4.8.0

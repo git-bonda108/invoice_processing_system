@@ -1,0 +1,33 @@
+# Development dependencies for Invoice Processing System
+# Install with: pip install -r requirements-dev.txt
+
+# Core dependencies (from requirements.txt)
+-r requirements.txt
+
+# Development tools
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.9.1
+flake8==6.1.0
+mypy==1.6.1
+isort==5.12.0
+
+# Documentation
+sphinx==7.2.6
+sphinx-rtd-theme==1.3.0
+
+# Jupyter for development and analysis
+jupyter==1.0.0
+ipykernel==6.25.2
+
+# Testing utilities
+mock==5.1.0
+responses==0.23.3
+
+# Performance profiling
+memory-profiler==0.61.0
+line-profiler==4.1.1
+
+# Code quality
+pre-commit==3.5.0
+bandit==1.7.5
