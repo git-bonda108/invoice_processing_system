@@ -27,12 +27,12 @@
           "anomalies": []
         },
         "contract_agent": {
-          "confidence_score": 0.953,
+          "confidence_score": 0.909,
           "validation_details": "contract_agent validation completed",
           "anomalies": []
         },
         "msa_agent": {
-          "confidence_score": 0.901,
+          "confidence_score": 0.88,
           "validation_details": "msa_agent validation completed",
           "anomalies": []
         },
@@ -50,14 +50,14 @@
       "anomalies": [],
       "confidence_scores": {
         "extraction_agent": 0.95,
-        "contract_agent": 0.953,
-        "msa_agent": 0.901,
+        "contract_agent": 0.909,
+        "msa_agent": 0.88,
         "master_data_agent": 0.96,
         "quality_review_agent": 0.92
       },
       "risk_assessment": "pending",
-      "created_at": "2025-08-26T00:39:35.743749",
-      "last_updated": "2025-08-26T00:39:35.744932",
+      "created_at": "2025-08-26T00:47:44.568563",
+      "last_updated": "2025-08-26T00:47:44.568740",
       "state_version": 13
     },
     "WF-CON-001": {
@@ -87,12 +87,12 @@
           "anomalies": []
         },
         "contract_agent": {
-          "confidence_score": 0.953,
+          "confidence_score": 0.909,
           "validation_details": "contract_agent validation completed",
           "anomalies": []
         },
         "msa_agent": {
-          "confidence_score": 0.901,
+          "confidence_score": 0.88,
           "validation_details": "msa_agent validation completed",
           "anomalies": []
         },
@@ -110,14 +110,14 @@
       "anomalies": [],
       "confidence_scores": {
         "extraction_agent": 0.95,
-        "contract_agent": 0.953,
-        "msa_agent": 0.901,
+        "contract_agent": 0.909,
+        "msa_agent": 0.88,
         "master_data_agent": 0.96,
         "quality_review_agent": 0.92
       },
       "risk_assessment": "pending",
-      "created_at": "2025-08-26T00:39:36.746856",
-      "last_updated": "2025-08-26T00:39:36.749883",
+      "created_at": "2025-08-26T00:47:45.570102",
+      "last_updated": "2025-08-26T00:47:45.570423",
       "state_version": 13
     },
     "WF-MSA-001": {
@@ -147,12 +147,12 @@
           "anomalies": []
         },
         "contract_agent": {
-          "confidence_score": 0.953,
+          "confidence_score": 0.909,
           "validation_details": "contract_agent validation completed",
           "anomalies": []
         },
         "msa_agent": {
-          "confidence_score": 0.901,
+          "confidence_score": 0.88,
           "validation_details": "msa_agent validation completed",
           "anomalies": []
         },
@@ -170,21 +170,21 @@
       "anomalies": [],
       "confidence_scores": {
         "extraction_agent": 0.95,
-        "contract_agent": 0.953,
-        "msa_agent": 0.901,
+        "contract_agent": 0.909,
+        "msa_agent": 0.88,
         "master_data_agent": 0.96,
         "quality_review_agent": 0.92
       },
       "risk_assessment": "pending",
-      "created_at": "2025-08-26T00:39:37.751075",
-      "last_updated": "2025-08-26T00:39:37.753205",
+      "created_at": "2025-08-26T00:47:46.570798",
+      "last_updated": "2025-08-26T00:47:46.571089",
       "state_version": 13
     }
   },
   "state_transitions": [
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.743812",
+      "timestamp": "2025-08-26T00:47:44.568580",
       "status": "created",
       "stage": "initialization",
       "state_snapshot": {
@@ -214,12 +214,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -237,20 +237,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.743793",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568576",
         "state_version": 1
       }
     },
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.743891",
+      "timestamp": "2025-08-26T00:47:44.568596",
       "status": "agent_processing",
       "stage": "extraction_agent_processing",
       "state_snapshot": {
@@ -280,12 +280,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -303,20 +303,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.743855",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568590",
         "state_version": 2
       }
     },
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.743994",
+      "timestamp": "2025-08-26T00:47:44.568617",
       "status": "agent_processing",
       "stage": "contract_agent_processing",
       "state_snapshot": {
@@ -346,12 +346,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -369,20 +369,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.743970",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568613",
         "state_version": 3
       }
     },
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.744075",
+      "timestamp": "2025-08-26T00:47:44.568634",
       "status": "agent_processing",
       "stage": "msa_agent_processing",
       "state_snapshot": {
@@ -412,12 +412,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -435,20 +435,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.744049",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568625",
         "state_version": 4
       }
     },
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.744154",
+      "timestamp": "2025-08-26T00:47:44.568646",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -478,12 +478,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -501,20 +501,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.744129",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568641",
         "state_version": 5
       }
     },
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.744193",
+      "timestamp": "2025-08-26T00:47:44.568656",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -544,12 +544,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -567,20 +567,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.744129",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568641",
         "state_version": 5
       }
     },
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.744308",
+      "timestamp": "2025-08-26T00:47:44.568674",
       "status": "agent_processing",
       "stage": "contract_agent_processing",
       "state_snapshot": {
@@ -610,12 +610,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -633,20 +633,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.744283",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568669",
         "state_version": 7
       }
     },
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.744444",
+      "timestamp": "2025-08-26T00:47:44.568699",
       "status": "agent_processing",
       "stage": "msa_agent_processing",
       "state_snapshot": {
@@ -676,12 +676,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -699,20 +699,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.744415",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568693",
         "state_version": 9
       }
     },
     {
       "workflow_id": "WF-INV-001",
-      "timestamp": "2025-08-26T00:39:35.744808",
+      "timestamp": "2025-08-26T00:47:44.568722",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -742,12 +742,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -765,20 +765,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:35.743749",
-        "last_updated": "2025-08-26T00:39:35.744775",
+        "created_at": "2025-08-26T00:47:44.568563",
+        "last_updated": "2025-08-26T00:47:44.568717",
         "state_version": 11
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.746919",
+      "timestamp": "2025-08-26T00:47:45.570118",
       "status": "created",
       "stage": "initialization",
       "state_snapshot": {
@@ -808,12 +808,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -831,20 +831,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.746890",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570112",
         "state_version": 1
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.747034",
+      "timestamp": "2025-08-26T00:47:45.570138",
       "status": "agent_processing",
       "stage": "extraction_agent_processing",
       "state_snapshot": {
@@ -874,12 +874,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -897,20 +897,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.746995",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570131",
         "state_version": 2
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.747155",
+      "timestamp": "2025-08-26T00:47:45.570163",
       "status": "agent_processing",
       "stage": "contract_agent_processing",
       "state_snapshot": {
@@ -940,12 +940,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -963,20 +963,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.747128",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570157",
         "state_version": 3
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.747235",
+      "timestamp": "2025-08-26T00:47:45.570174",
       "status": "agent_processing",
       "stage": "msa_agent_processing",
       "state_snapshot": {
@@ -1006,12 +1006,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1029,20 +1029,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.747210",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570170",
         "state_version": 4
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.747316",
+      "timestamp": "2025-08-26T00:47:45.570193",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -1072,12 +1072,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1095,20 +1095,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.747290",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570181",
         "state_version": 5
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.747355",
+      "timestamp": "2025-08-26T00:47:45.570203",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -1138,12 +1138,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1161,20 +1161,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.747290",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570181",
         "state_version": 5
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.748943",
+      "timestamp": "2025-08-26T00:47:45.570223",
       "status": "agent_processing",
       "stage": "contract_agent_processing",
       "state_snapshot": {
@@ -1204,12 +1204,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1227,20 +1227,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.748912",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570218",
         "state_version": 7
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.749098",
+      "timestamp": "2025-08-26T00:47:45.570249",
       "status": "agent_processing",
       "stage": "msa_agent_processing",
       "state_snapshot": {
@@ -1270,12 +1270,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1293,20 +1293,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.749072",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570244",
         "state_version": 9
       }
     },
     {
       "workflow_id": "WF-CON-001",
-      "timestamp": "2025-08-26T00:39:36.749236",
+      "timestamp": "2025-08-26T00:47:45.570398",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -1336,12 +1336,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1359,20 +1359,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:36.746856",
-        "last_updated": "2025-08-26T00:39:36.749210",
+        "created_at": "2025-08-26T00:47:45.570102",
+        "last_updated": "2025-08-26T00:47:45.570392",
         "state_version": 11
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.751135",
+      "timestamp": "2025-08-26T00:47:46.570821",
       "status": "created",
       "stage": "initialization",
       "state_snapshot": {
@@ -1402,12 +1402,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1425,20 +1425,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.751111",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.570812",
         "state_version": 1
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.751656",
+      "timestamp": "2025-08-26T00:47:46.570848",
       "status": "agent_processing",
       "stage": "extraction_agent_processing",
       "state_snapshot": {
@@ -1468,12 +1468,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1491,20 +1491,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.751407",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.570838",
         "state_version": 2
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.752331",
+      "timestamp": "2025-08-26T00:47:46.570902",
       "status": "agent_processing",
       "stage": "contract_agent_processing",
       "state_snapshot": {
@@ -1534,12 +1534,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1557,20 +1557,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.752103",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.570894",
         "state_version": 3
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.752596",
+      "timestamp": "2025-08-26T00:47:46.570923",
       "status": "agent_processing",
       "stage": "msa_agent_processing",
       "state_snapshot": {
@@ -1600,12 +1600,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1623,20 +1623,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.752475",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.570914",
         "state_version": 4
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.752698",
+      "timestamp": "2025-08-26T00:47:46.570945",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -1666,12 +1666,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1689,20 +1689,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.752672",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.570937",
         "state_version": 5
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.752734",
+      "timestamp": "2025-08-26T00:47:46.570955",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -1732,12 +1732,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1755,20 +1755,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.752672",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.570937",
         "state_version": 5
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.752853",
+      "timestamp": "2025-08-26T00:47:46.570988",
       "status": "agent_processing",
       "stage": "contract_agent_processing",
       "state_snapshot": {
@@ -1798,12 +1798,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1821,20 +1821,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.752825",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.570979",
         "state_version": 7
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.752989",
+      "timestamp": "2025-08-26T00:47:46.571029",
       "status": "agent_processing",
       "stage": "msa_agent_processing",
       "state_snapshot": {
@@ -1864,12 +1864,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1887,20 +1887,20 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.752966",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.571021",
         "state_version": 9
       }
     },
     {
       "workflow_id": "WF-MSA-001",
-      "timestamp": "2025-08-26T00:39:37.753111",
+      "timestamp": "2025-08-26T00:47:46.571062",
       "status": "agent_processing",
       "stage": "master_data_agent_processing",
       "state_snapshot": {
@@ -1930,12 +1930,12 @@
             "anomalies": []
           },
           "contract_agent": {
-            "confidence_score": 0.953,
+            "confidence_score": 0.909,
             "validation_details": "contract_agent validation completed",
             "anomalies": []
           },
           "msa_agent": {
-            "confidence_score": 0.901,
+            "confidence_score": 0.88,
             "validation_details": "msa_agent validation completed",
             "anomalies": []
           },
@@ -1953,14 +1953,14 @@
         "anomalies": [],
         "confidence_scores": {
           "extraction_agent": 0.95,
-          "contract_agent": 0.953,
-          "msa_agent": 0.901,
+          "contract_agent": 0.909,
+          "msa_agent": 0.88,
           "master_data_agent": 0.96,
           "quality_review_agent": 0.92
         },
         "risk_assessment": "pending",
-        "created_at": "2025-08-26T00:39:37.751075",
-        "last_updated": "2025-08-26T00:39:37.753088",
+        "created_at": "2025-08-26T00:47:46.570798",
+        "last_updated": "2025-08-26T00:47:46.571054",
         "state_version": 11
       }
     }
@@ -1970,9 +1970,9 @@
       "workflow_id": "WF-INV-001",
       "agent_id": "extraction_agent",
       "task_type": "extraction",
-      "assigned_at": "2025-08-26T00:39:35.743872",
+      "assigned_at": "2025-08-26T00:47:44.568593",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:35.743941",
+      "completed_at": "2025-08-26T00:47:44.568606",
       "result": {
         "confidence_score": 0.95,
         "extracted_fields": [
@@ -1988,11 +1988,11 @@
       "workflow_id": "WF-INV-001",
       "agent_id": "contract_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:35.744295",
+      "assigned_at": "2025-08-26T00:47:44.568671",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:35.744359",
+      "completed_at": "2025-08-26T00:47:44.568683",
       "result": {
-        "confidence_score": 0.953,
+        "confidence_score": 0.909,
         "validation_details": "contract_agent validation completed",
         "anomalies": []
       }
@@ -2001,11 +2001,11 @@
       "workflow_id": "WF-INV-001",
       "agent_id": "msa_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:35.744427",
+      "assigned_at": "2025-08-26T00:47:44.568696",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:35.744585",
+      "completed_at": "2025-08-26T00:47:44.568708",
       "result": {
-        "confidence_score": 0.901,
+        "confidence_score": 0.88,
         "validation_details": "msa_agent validation completed",
         "anomalies": []
       }
@@ -2014,9 +2014,9 @@
       "workflow_id": "WF-INV-001",
       "agent_id": "master_data_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:35.744790",
+      "assigned_at": "2025-08-26T00:47:44.568719",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:35.744869",
+      "completed_at": "2025-08-26T00:47:44.568730",
       "result": {
         "confidence_score": 0.96,
         "validation_details": "master_data_agent validation completed",
@@ -2027,9 +2027,9 @@
       "workflow_id": "WF-CON-001",
       "agent_id": "extraction_agent",
       "task_type": "extraction",
-      "assigned_at": "2025-08-26T00:39:36.747013",
+      "assigned_at": "2025-08-26T00:47:45.570134",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:36.747093",
+      "completed_at": "2025-08-26T00:47:45.570149",
       "result": {
         "confidence_score": 0.95,
         "extracted_fields": [
@@ -2045,11 +2045,11 @@
       "workflow_id": "WF-CON-001",
       "agent_id": "contract_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:36.748926",
+      "assigned_at": "2025-08-26T00:47:45.570220",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:36.748999",
+      "completed_at": "2025-08-26T00:47:45.570234",
       "result": {
-        "confidence_score": 0.953,
+        "confidence_score": 0.909,
         "validation_details": "contract_agent validation completed",
         "anomalies": []
       }
@@ -2058,11 +2058,11 @@
       "workflow_id": "WF-CON-001",
       "agent_id": "msa_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:36.749083",
+      "assigned_at": "2025-08-26T00:47:45.570246",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:36.749146",
+      "completed_at": "2025-08-26T00:47:45.570259",
       "result": {
-        "confidence_score": 0.901,
+        "confidence_score": 0.88,
         "validation_details": "msa_agent validation completed",
         "anomalies": []
       }
@@ -2071,9 +2071,9 @@
       "workflow_id": "WF-CON-001",
       "agent_id": "master_data_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:36.749222",
+      "assigned_at": "2025-08-26T00:47:45.570395",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:36.749757",
+      "completed_at": "2025-08-26T00:47:45.570408",
       "result": {
         "confidence_score": 0.96,
         "validation_details": "master_data_agent validation completed",
@@ -2084,9 +2084,9 @@
       "workflow_id": "WF-MSA-001",
       "agent_id": "extraction_agent",
       "task_type": "extraction",
-      "assigned_at": "2025-08-26T00:39:37.751486",
+      "assigned_at": "2025-08-26T00:47:46.570842",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:37.752060",
+      "completed_at": "2025-08-26T00:47:46.570882",
       "result": {
         "confidence_score": 0.95,
         "extracted_fields": [
@@ -2102,11 +2102,11 @@
       "workflow_id": "WF-MSA-001",
       "agent_id": "contract_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:37.752840",
+      "assigned_at": "2025-08-26T00:47:46.570983",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:37.752911",
+      "completed_at": "2025-08-26T00:47:46.571005",
       "result": {
-        "confidence_score": 0.953,
+        "confidence_score": 0.909,
         "validation_details": "contract_agent validation completed",
         "anomalies": []
       }
@@ -2115,11 +2115,11 @@
       "workflow_id": "WF-MSA-001",
       "agent_id": "msa_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:37.752976",
+      "assigned_at": "2025-08-26T00:47:46.571024",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:37.753043",
+      "completed_at": "2025-08-26T00:47:46.571041",
       "result": {
-        "confidence_score": 0.901,
+        "confidence_score": 0.88,
         "validation_details": "msa_agent validation completed",
         "anomalies": []
       }
@@ -2128,9 +2128,9 @@
       "workflow_id": "WF-MSA-001",
       "agent_id": "master_data_agent",
       "task_type": "validation",
-      "assigned_at": "2025-08-26T00:39:37.753099",
+      "assigned_at": "2025-08-26T00:47:46.571058",
       "status": "completed",
-      "completed_at": "2025-08-26T00:39:37.753151",
+      "completed_at": "2025-08-26T00:47:46.571073",
       "result": {
         "confidence_score": 0.96,
         "validation_details": "master_data_agent validation completed",
@@ -2138,5 +2138,5 @@
       }
     }
   },
-  "export_timestamp": "2025-08-26T00:39:38.757735"
+  "export_timestamp": "2025-08-26T00:47:47.574522"
 }
