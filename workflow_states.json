@@ -1,0 +1,2142 @@
+{
+  "workflow_states": {
+    "WF-INV-001": {
+      "workflow_id": "WF-INV-001",
+      "document_type": "invoice",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "agents_involved": [
+        "extraction_agent",
+        "contract_agent",
+        "msa_agent",
+        "master_data_agent",
+        "contract_agent",
+        "msa_agent",
+        "master_data_agent"
+      ],
+      "current_agent": "master_data_agent",
+      "agent_results": {
+        "extraction_agent": {
+          "confidence_score": 0.95,
+          "extracted_fields": [
+            "invoice_number",
+            "amount",
+            "vendor",
+            "date"
+          ],
+          "anomalies": []
+        },
+        "contract_agent": {
+          "confidence_score": 0.953,
+          "validation_details": "contract_agent validation completed",
+          "anomalies": []
+        },
+        "msa_agent": {
+          "confidence_score": 0.901,
+          "validation_details": "msa_agent validation completed",
+          "anomalies": []
+        },
+        "master_data_agent": {
+          "confidence_score": 0.96,
+          "validation_details": "master_data_agent validation completed",
+          "anomalies": []
+        },
+        "quality_review_agent": {
+          "confidence_score": 0.92,
+          "quality_details": "Quality review completed",
+          "anomalies": []
+        }
+      },
+      "anomalies": [],
+      "confidence_scores": {
+        "extraction_agent": 0.95,
+        "contract_agent": 0.953,
+        "msa_agent": 0.901,
+        "master_data_agent": 0.96,
+        "quality_review_agent": 0.92
+      },
+      "risk_assessment": "pending",
+      "created_at": "2025-08-26T00:39:35.743749",
+      "last_updated": "2025-08-26T00:39:35.744932",
+      "state_version": 13
+    },
+    "WF-CON-001": {
+      "workflow_id": "WF-CON-001",
+      "document_type": "contract",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "agents_involved": [
+        "extraction_agent",
+        "contract_agent",
+        "msa_agent",
+        "master_data_agent",
+        "contract_agent",
+        "msa_agent",
+        "master_data_agent"
+      ],
+      "current_agent": "master_data_agent",
+      "agent_results": {
+        "extraction_agent": {
+          "confidence_score": 0.95,
+          "extracted_fields": [
+            "invoice_number",
+            "amount",
+            "vendor",
+            "date"
+          ],
+          "anomalies": []
+        },
+        "contract_agent": {
+          "confidence_score": 0.953,
+          "validation_details": "contract_agent validation completed",
+          "anomalies": []
+        },
+        "msa_agent": {
+          "confidence_score": 0.901,
+          "validation_details": "msa_agent validation completed",
+          "anomalies": []
+        },
+        "master_data_agent": {
+          "confidence_score": 0.96,
+          "validation_details": "master_data_agent validation completed",
+          "anomalies": []
+        },
+        "quality_review_agent": {
+          "confidence_score": 0.92,
+          "quality_details": "Quality review completed",
+          "anomalies": []
+        }
+      },
+      "anomalies": [],
+      "confidence_scores": {
+        "extraction_agent": 0.95,
+        "contract_agent": 0.953,
+        "msa_agent": 0.901,
+        "master_data_agent": 0.96,
+        "quality_review_agent": 0.92
+      },
+      "risk_assessment": "pending",
+      "created_at": "2025-08-26T00:39:36.746856",
+      "last_updated": "2025-08-26T00:39:36.749883",
+      "state_version": 13
+    },
+    "WF-MSA-001": {
+      "workflow_id": "WF-MSA-001",
+      "document_type": "msa",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "agents_involved": [
+        "extraction_agent",
+        "contract_agent",
+        "msa_agent",
+        "master_data_agent",
+        "contract_agent",
+        "msa_agent",
+        "master_data_agent"
+      ],
+      "current_agent": "master_data_agent",
+      "agent_results": {
+        "extraction_agent": {
+          "confidence_score": 0.95,
+          "extracted_fields": [
+            "invoice_number",
+            "amount",
+            "vendor",
+            "date"
+          ],
+          "anomalies": []
+        },
+        "contract_agent": {
+          "confidence_score": 0.953,
+          "validation_details": "contract_agent validation completed",
+          "anomalies": []
+        },
+        "msa_agent": {
+          "confidence_score": 0.901,
+          "validation_details": "msa_agent validation completed",
+          "anomalies": []
+        },
+        "master_data_agent": {
+          "confidence_score": 0.96,
+          "validation_details": "master_data_agent validation completed",
+          "anomalies": []
+        },
+        "quality_review_agent": {
+          "confidence_score": 0.92,
+          "quality_details": "Quality review completed",
+          "anomalies": []
+        }
+      },
+      "anomalies": [],
+      "confidence_scores": {
+        "extraction_agent": 0.95,
+        "contract_agent": 0.953,
+        "msa_agent": 0.901,
+        "master_data_agent": 0.96,
+        "quality_review_agent": 0.92
+      },
+      "risk_assessment": "pending",
+      "created_at": "2025-08-26T00:39:37.751075",
+      "last_updated": "2025-08-26T00:39:37.753205",
+      "state_version": 13
+    }
+  },
+  "state_transitions": [
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.743812",
+      "status": "created",
+      "stage": "initialization",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "created",
+        "stage": "initialization",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": null,
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.743793",
+        "state_version": 1
+      }
+    },
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.743891",
+      "status": "agent_processing",
+      "stage": "extraction_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "agent_processing",
+        "stage": "extraction_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "extraction_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.743855",
+        "state_version": 2
+      }
+    },
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.743994",
+      "status": "agent_processing",
+      "stage": "contract_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "agent_processing",
+        "stage": "contract_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "contract_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.743970",
+        "state_version": 3
+      }
+    },
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.744075",
+      "status": "agent_processing",
+      "stage": "msa_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "agent_processing",
+        "stage": "msa_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "msa_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.744049",
+        "state_version": 4
+      }
+    },
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.744154",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.744129",
+        "state_version": 5
+      }
+    },
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.744193",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.744129",
+        "state_version": 5
+      }
+    },
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.744308",
+      "status": "agent_processing",
+      "stage": "contract_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "agent_processing",
+        "stage": "contract_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "contract_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.744283",
+        "state_version": 7
+      }
+    },
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.744444",
+      "status": "agent_processing",
+      "stage": "msa_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "agent_processing",
+        "stage": "msa_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "msa_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.744415",
+        "state_version": 9
+      }
+    },
+    {
+      "workflow_id": "WF-INV-001",
+      "timestamp": "2025-08-26T00:39:35.744808",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-INV-001",
+        "document_type": "invoice",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:35.743749",
+        "last_updated": "2025-08-26T00:39:35.744775",
+        "state_version": 11
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.746919",
+      "status": "created",
+      "stage": "initialization",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "created",
+        "stage": "initialization",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": null,
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.746890",
+        "state_version": 1
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.747034",
+      "status": "agent_processing",
+      "stage": "extraction_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "agent_processing",
+        "stage": "extraction_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "extraction_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.746995",
+        "state_version": 2
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.747155",
+      "status": "agent_processing",
+      "stage": "contract_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "agent_processing",
+        "stage": "contract_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "contract_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.747128",
+        "state_version": 3
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.747235",
+      "status": "agent_processing",
+      "stage": "msa_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "agent_processing",
+        "stage": "msa_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "msa_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.747210",
+        "state_version": 4
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.747316",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.747290",
+        "state_version": 5
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.747355",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.747290",
+        "state_version": 5
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.748943",
+      "status": "agent_processing",
+      "stage": "contract_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "agent_processing",
+        "stage": "contract_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "contract_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.748912",
+        "state_version": 7
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.749098",
+      "status": "agent_processing",
+      "stage": "msa_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "agent_processing",
+        "stage": "msa_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "msa_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.749072",
+        "state_version": 9
+      }
+    },
+    {
+      "workflow_id": "WF-CON-001",
+      "timestamp": "2025-08-26T00:39:36.749236",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-CON-001",
+        "document_type": "contract",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:36.746856",
+        "last_updated": "2025-08-26T00:39:36.749210",
+        "state_version": 11
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.751135",
+      "status": "created",
+      "stage": "initialization",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "created",
+        "stage": "initialization",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": null,
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.751111",
+        "state_version": 1
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.751656",
+      "status": "agent_processing",
+      "stage": "extraction_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "agent_processing",
+        "stage": "extraction_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "extraction_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.751407",
+        "state_version": 2
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.752331",
+      "status": "agent_processing",
+      "stage": "contract_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "agent_processing",
+        "stage": "contract_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "contract_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.752103",
+        "state_version": 3
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.752596",
+      "status": "agent_processing",
+      "stage": "msa_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "agent_processing",
+        "stage": "msa_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "msa_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.752475",
+        "state_version": 4
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.752698",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.752672",
+        "state_version": 5
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.752734",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.752672",
+        "state_version": 5
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.752853",
+      "status": "agent_processing",
+      "stage": "contract_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "agent_processing",
+        "stage": "contract_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "contract_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.752825",
+        "state_version": 7
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.752989",
+      "status": "agent_processing",
+      "stage": "msa_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "agent_processing",
+        "stage": "msa_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "msa_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.752966",
+        "state_version": 9
+      }
+    },
+    {
+      "workflow_id": "WF-MSA-001",
+      "timestamp": "2025-08-26T00:39:37.753111",
+      "status": "agent_processing",
+      "stage": "master_data_agent_processing",
+      "state_snapshot": {
+        "workflow_id": "WF-MSA-001",
+        "document_type": "msa",
+        "status": "agent_processing",
+        "stage": "master_data_agent_processing",
+        "agents_involved": [
+          "extraction_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent",
+          "contract_agent",
+          "msa_agent",
+          "master_data_agent"
+        ],
+        "current_agent": "master_data_agent",
+        "agent_results": {
+          "extraction_agent": {
+            "confidence_score": 0.95,
+            "extracted_fields": [
+              "invoice_number",
+              "amount",
+              "vendor",
+              "date"
+            ],
+            "anomalies": []
+          },
+          "contract_agent": {
+            "confidence_score": 0.953,
+            "validation_details": "contract_agent validation completed",
+            "anomalies": []
+          },
+          "msa_agent": {
+            "confidence_score": 0.901,
+            "validation_details": "msa_agent validation completed",
+            "anomalies": []
+          },
+          "master_data_agent": {
+            "confidence_score": 0.96,
+            "validation_details": "master_data_agent validation completed",
+            "anomalies": []
+          },
+          "quality_review_agent": {
+            "confidence_score": 0.92,
+            "quality_details": "Quality review completed",
+            "anomalies": []
+          }
+        },
+        "anomalies": [],
+        "confidence_scores": {
+          "extraction_agent": 0.95,
+          "contract_agent": 0.953,
+          "msa_agent": 0.901,
+          "master_data_agent": 0.96,
+          "quality_review_agent": 0.92
+        },
+        "risk_assessment": "pending",
+        "created_at": "2025-08-26T00:39:37.751075",
+        "last_updated": "2025-08-26T00:39:37.753088",
+        "state_version": 11
+      }
+    }
+  ],
+  "agent_coordination": {
+    "WF-INV-001_extraction_agent": {
+      "workflow_id": "WF-INV-001",
+      "agent_id": "extraction_agent",
+      "task_type": "extraction",
+      "assigned_at": "2025-08-26T00:39:35.743872",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:35.743941",
+      "result": {
+        "confidence_score": 0.95,
+        "extracted_fields": [
+          "invoice_number",
+          "amount",
+          "vendor",
+          "date"
+        ],
+        "anomalies": []
+      }
+    },
+    "WF-INV-001_contract_agent": {
+      "workflow_id": "WF-INV-001",
+      "agent_id": "contract_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:35.744295",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:35.744359",
+      "result": {
+        "confidence_score": 0.953,
+        "validation_details": "contract_agent validation completed",
+        "anomalies": []
+      }
+    },
+    "WF-INV-001_msa_agent": {
+      "workflow_id": "WF-INV-001",
+      "agent_id": "msa_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:35.744427",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:35.744585",
+      "result": {
+        "confidence_score": 0.901,
+        "validation_details": "msa_agent validation completed",
+        "anomalies": []
+      }
+    },
+    "WF-INV-001_master_data_agent": {
+      "workflow_id": "WF-INV-001",
+      "agent_id": "master_data_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:35.744790",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:35.744869",
+      "result": {
+        "confidence_score": 0.96,
+        "validation_details": "master_data_agent validation completed",
+        "anomalies": []
+      }
+    },
+    "WF-CON-001_extraction_agent": {
+      "workflow_id": "WF-CON-001",
+      "agent_id": "extraction_agent",
+      "task_type": "extraction",
+      "assigned_at": "2025-08-26T00:39:36.747013",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:36.747093",
+      "result": {
+        "confidence_score": 0.95,
+        "extracted_fields": [
+          "invoice_number",
+          "amount",
+          "vendor",
+          "date"
+        ],
+        "anomalies": []
+      }
+    },
+    "WF-CON-001_contract_agent": {
+      "workflow_id": "WF-CON-001",
+      "agent_id": "contract_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:36.748926",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:36.748999",
+      "result": {
+        "confidence_score": 0.953,
+        "validation_details": "contract_agent validation completed",
+        "anomalies": []
+      }
+    },
+    "WF-CON-001_msa_agent": {
+      "workflow_id": "WF-CON-001",
+      "agent_id": "msa_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:36.749083",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:36.749146",
+      "result": {
+        "confidence_score": 0.901,
+        "validation_details": "msa_agent validation completed",
+        "anomalies": []
+      }
+    },
+    "WF-CON-001_master_data_agent": {
+      "workflow_id": "WF-CON-001",
+      "agent_id": "master_data_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:36.749222",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:36.749757",
+      "result": {
+        "confidence_score": 0.96,
+        "validation_details": "master_data_agent validation completed",
+        "anomalies": []
+      }
+    },
+    "WF-MSA-001_extraction_agent": {
+      "workflow_id": "WF-MSA-001",
+      "agent_id": "extraction_agent",
+      "task_type": "extraction",
+      "assigned_at": "2025-08-26T00:39:37.751486",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:37.752060",
+      "result": {
+        "confidence_score": 0.95,
+        "extracted_fields": [
+          "invoice_number",
+          "amount",
+          "vendor",
+          "date"
+        ],
+        "anomalies": []
+      }
+    },
+    "WF-MSA-001_contract_agent": {
+      "workflow_id": "WF-MSA-001",
+      "agent_id": "contract_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:37.752840",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:37.752911",
+      "result": {
+        "confidence_score": 0.953,
+        "validation_details": "contract_agent validation completed",
+        "anomalies": []
+      }
+    },
+    "WF-MSA-001_msa_agent": {
+      "workflow_id": "WF-MSA-001",
+      "agent_id": "msa_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:37.752976",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:37.753043",
+      "result": {
+        "confidence_score": 0.901,
+        "validation_details": "msa_agent validation completed",
+        "anomalies": []
+      }
+    },
+    "WF-MSA-001_master_data_agent": {
+      "workflow_id": "WF-MSA-001",
+      "agent_id": "master_data_agent",
+      "task_type": "validation",
+      "assigned_at": "2025-08-26T00:39:37.753099",
+      "status": "completed",
+      "completed_at": "2025-08-26T00:39:37.753151",
+      "result": {
+        "confidence_score": 0.96,
+        "validation_details": "master_data_agent validation completed",
+        "anomalies": []
+      }
+    }
+  },
+  "export_timestamp": "2025-08-26T00:39:38.757735"
+}
