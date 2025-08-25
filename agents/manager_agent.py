@@ -80,7 +80,7 @@ class ManagerAgent(BaseAgent):
             self.metrics.record_task_completion(processing_time, result.get("confidence", 0.8))
             
             return result
-            
+                
         except Exception as e:
             self.logger.error(f"Error processing workflow task: {e}")
             self.metrics.record_task_failure(str(e))
@@ -325,7 +325,7 @@ class ManagerAgent(BaseAgent):
             
             self.logger.info(f"Phase {phase['name']} started for workflow {workflow_id}")
             return True
-            
+                
         except Exception as e:
             self.logger.error(f"Failed to execute phase {phase['name']}: {e}")
             return False
@@ -468,7 +468,7 @@ class ManagerAgent(BaseAgent):
             else:
                 return {"error": "Workflow not found"}
         else:
-            return {
+        return {
                 "current_phase": self.workflow_state["current_phase"],
                 "active_workflows": len(self.workflow_state["active_tasks"]),
                 "completed_workflows": len(self.workflow_state["completed_tasks"]),

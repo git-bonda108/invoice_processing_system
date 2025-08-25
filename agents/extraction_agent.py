@@ -200,7 +200,7 @@ class InvoiceExtractionAgent(BaseAgent):
                         "value": data["invoice_date"]
                     })
             except ValueError:
-                anomalies.append({
+                    anomalies.append({
                     "type": "invalid_date_format",
                     "severity": "medium",
                     "description": "Invalid date format",

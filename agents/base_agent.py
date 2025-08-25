@@ -224,11 +224,11 @@ class BaseAgent(ABC):
             message_type=MessageType.HEARTBEAT,
             sender_id=self.agent_id,
             payload={
-                "status": self.status.value,
-                "timestamp": datetime.now().isoformat(),
-                "metrics": {
-                    "tasks_completed": self.metrics.tasks_completed,
-                    "tasks_failed": self.metrics.tasks_failed,
+            "status": self.status.value,
+            "timestamp": datetime.now().isoformat(),
+            "metrics": {
+                "tasks_completed": self.metrics.tasks_completed,
+                "tasks_failed": self.metrics.tasks_failed,
                     "uptime": (datetime.now() - self.start_time).total_seconds()
                 }
             },
@@ -291,7 +291,7 @@ class BaseAgent(ABC):
                 recipient_id=message.sender_id,
                 payload={
                     "task_id": message.payload.get("task_type"),
-                    "result": result,
+                "result": result,
                     "confidence": result.get("confidence", 0.0),
                     "processing_time": result.get("processing_time", 0.0)
                 }
